@@ -52,6 +52,7 @@ function stepZero(target) {
     } else {
         stepCross(target);
     }
+}
 function win() {
     let comb = [
         [0, 1, 2],
