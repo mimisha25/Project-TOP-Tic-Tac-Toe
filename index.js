@@ -11,11 +11,20 @@ function grid() {
         cells.classList.add("cells");
         game.appendChild(cells);
     }
-
+    game.addEventListener('click', init);
     document.querySelector("body").removeChild(btnGame);
     const restart = document.createElement("button");
     restart.classList.add("restart");
     document.querySelector("body").appendChild(restart);
     restart.textContent = "Restart";
   
+}
+game.addEventListener('click', init);
+function init(e) {
+    if (step === true){
+        stepCross(e.target);
+    } else {
+        stepZero(e.target);
+    } 
+    step = !step;
 }
