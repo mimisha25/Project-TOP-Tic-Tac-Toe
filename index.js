@@ -17,7 +17,7 @@ function grid() {
     restart.classList.add("restart");
     document.querySelector("body").appendChild(restart);
     restart.textContent = "Restart";
-  
+    restart.addEventListener("click", newGame);
 }
 game.addEventListener('click', init);
 function init(e) {
