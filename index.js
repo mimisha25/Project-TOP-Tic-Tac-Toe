@@ -27,6 +27,7 @@ function init(e) {
         stepZero(e.target);
     } 
     step = !step;
+    win();
 }
 function stepCross(target) {
     if (target.textContent === "") {
