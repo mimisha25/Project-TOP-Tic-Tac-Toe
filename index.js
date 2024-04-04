@@ -60,6 +60,9 @@ function win() {
         if (cells[comb[i][0]].textContent === "X" &&
             cells[comb[i][1]].textContent === "X" &&
             cells[comb[i][2]].textContent === "X") {
+            cells[comb[i][0]].classList.add('active');
+            cells[comb[i][1]].classList.add('active');
+            cells[comb[i][2]].classList.add('active');
             res.innerText = 'Winner is X';
             game.removeEventListener('click', init);
         }
@@ -67,6 +70,9 @@ function win() {
         else if (cells[comb[i][0]].textContent === "O" &&
             cells[comb[i][1]].textContent === "O" &&
             cells[comb[i][2]].textContent === "O") {
+            cells[comb[i][0]].classList.add('active');
+            cells[comb[i][1]].classList.add('active');
+            cells[comb[i][2]].classList.add('active');
             res.innerText = 'Winner is O';
             game.removeEventListener('click', init);
         } else if (count == 9) {
