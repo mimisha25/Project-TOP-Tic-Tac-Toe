@@ -15,7 +15,8 @@
     display: flex;
     flex-wrap: wrap;
   }
-.new-game{
+.new-game,
+ .restart{
     border: none;
     color: #fff;
     background: green;
@@ -23,4 +24,7 @@
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
+  }
+.active {
+    background: rgba(0, 255, 0, 0.5);
   }
