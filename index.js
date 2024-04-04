@@ -12,4 +12,10 @@ function grid() {
         game.appendChild(cells);
     }
 
+    document.querySelector("body").removeChild(btnGame);
+    const restart = document.createElement("button");
+    restart.classList.add("restart");
+    document.querySelector("body").appendChild(restart);
+    restart.textContent = "Restart";
+  
 }
