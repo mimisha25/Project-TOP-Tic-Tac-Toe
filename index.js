@@ -29,6 +29,14 @@ function init(e) {
     step = !step;
     win();
 }
+function newGame() {
+    step = false;
+    count = 0;
+    res.innerText = '';
+    game.innerHTML = '';
+    grid();
+}
+
 function stepCross(target) {
     if (target.textContent === "") {
         target.textContent = "X";
