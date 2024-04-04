@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .res {
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial;
+    height: 50px;
+  }
+  .game {
+    width: 360px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.new-game{
+    border: none;
+    color: #fff;
+    background: green;
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
