@@ -36,5 +36,12 @@ function stepCross(target) {
         stepZero(target);
     }
 }
+function stepZero(target) {
+    if (target.textContent === "") {
+        target.textContent = "O";
+        count++;
+    } else {
+        stepCross(target);
+    }
 
 
