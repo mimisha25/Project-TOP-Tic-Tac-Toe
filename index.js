@@ -28,3 +28,13 @@ function init(e) {
     } 
     step = !step;
 }
+function stepCross(target) {
+    if (target.textContent === "") {
+        target.textContent = "X";
+        count++;
+    } else {
+        stepZero(target);
+    }
+}
+
+
